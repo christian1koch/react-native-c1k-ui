@@ -1,167 +1,168 @@
 {
-  "name": "react-native-c1k-ui",
-  "version": "0.1.2",
-  "description": "ui lib",
-  "source": "./src/index.tsx",
-  "main": "./lib/commonjs/index.js",
-  "module": "./lib/module/index.js",
-  "exports": {
-    ".": {
-      "import": {
-        "types": "./lib/typescript/module/src/index.d.ts",
-        "default": "./lib/module/index.js"
-      },
-      "require": {
-        "types": "./lib/typescript/commonjs/src/index.d.ts",
-        "default": "./lib/commonjs/index.js"
-      }
-    }
-  },
-  "files": [
-    "src",
-    "lib",
-    "android",
-    "ios",
-    "cpp",
-    "*.podspec",
-    "!ios/build",
-    "!android/build",
-    "!android/gradle",
-    "!android/gradlew",
-    "!android/gradlew.bat",
-    "!android/local.properties",
-    "!**/__tests__",
-    "!**/__fixtures__",
-    "!**/__mocks__",
-    "!**/.*"
-  ],
-  "scripts": {
-    "example": "yarn workspace react-native-c1k-ui-example",
-    "test": "jest",
-    "typecheck": "tsc",
-    "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "clean": "del-cli lib",
-    "prepare": "bob build",
-    "release": "release-it"
-  },
-  "keywords": [
-    "react-native",
-    "ios",
-    "android"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/christian1koch/react-native-c1k-ui.git"
-  },
-  "author": "Christian Koch Echeverria <ko.che@web.de> (https://github.com/christian1koch)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/christian1koch/react-native-c1k-ui/issues"
-  },
-  "homepage": "https://github.com/christian1koch/react-native-c1k-ui#readme",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
-  "devDependencies": {
-    "@commitlint/config-conventional": "^17.0.2",
-    "@evilmartians/lefthook": "^1.5.0",
-    "@react-native/eslint-config": "^0.73.1",
-    "@release-it/conventional-changelog": "^5.0.0",
-    "@types/jest": "^29.5.5",
-    "@types/react": "^18.2.44",
-    "commitlint": "^17.0.2",
-    "del-cli": "^5.1.0",
-    "eslint": "^8.57.0",
-    "eslint-config-expo": "^7.1.2",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-prettier": "^5.0.1",
-    "jest": "^29.7.0",
-    "prettier": "^3.0.3",
-    "react": "18.2.0",
-    "react-native": "0.74.5",
-    "react-native-builder-bob": "^0.30.0",
-    "release-it": "^15.0.0",
-    "tailwindcss": "^3.4.10",
-    "typescript": "^5.2.2"
-  },
-  "resolutions": {
-    "@types/react": "^18.2.44"
-  },
-  "peerDependencies": {
-    "react": "*",
-    "react-native": "*"
-  },
-  "workspaces": [
-    "example"
-  ],
-  "packageManager": "yarn@3.6.1",
-  "jest": {
-    "preset": "react-native",
-    "modulePathIgnorePatterns": [
-      "<rootDir>/example/node_modules",
-      "<rootDir>/lib/"
-    ]
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "release-it": {
-    "git": {
-      "commitMessage": "chore: release ${version}",
-      "tagName": "v${version}"
-    },
-    "npm": {
-      "publish": true
-    },
-    "github": {
-      "release": true
-    },
-    "plugins": {
-      "@release-it/conventional-changelog": {
-        "preset": "angular"
-      }
-    }
-  },
-  "react-native-builder-bob": {
-    "source": "src",
-    "output": "lib",
-    "targets": [
-      [
-        "commonjs",
-        {
-          "esm": true
-        }
-      ],
-      [
-        "module",
-        {
-          "esm": true
-        }
-      ],
-      [
-        "typescript",
-        {
-          "project": "tsconfig.build.json",
-          "esm": true
-        }
-      ]
-    ]
-  },
-  "create-react-native-library": {
-    "type": "library",
-    "version": "0.41.0"
-  },
-  "dependencies": {
-    "@tamagui/lucide-icons": "^1.109.2",
-    "classnames": "^2.5.1",
-    "expo": "^51.0.31",
-    "expo-router": "^3.5.23",
-    "expo-status-bar": "^1.12.1",
-    "nativewind": "^2.0.11",
-    "tamagui": "^1.109.2"
-  }
+	"name": "react-native-c1k-ui",
+	"version": "0.1.2",
+	"description": "ui lib",
+	"source": "./src/index.tsx",
+	"main": "./lib/commonjs/index.js",
+	"module": "./lib/module/index.js",
+	"types": "./lib/typescript/module/src/index.d.ts",
+	"exports": {
+		".": {
+			"import": {
+				"types": "./lib/typescript/module/src/index.d.ts",
+				"default": "./lib/module/index.js"
+			},
+			"require": {
+				"types": "./lib/typescript/commonjs/src/index.d.ts",
+				"default": "./lib/commonjs/index.js"
+			}
+		}
+	},
+	"files": [
+		"src",
+		"lib",
+		"android",
+		"ios",
+		"cpp",
+		"*.podspec",
+		"!ios/build",
+		"!android/build",
+		"!android/gradle",
+		"!android/gradlew",
+		"!android/gradlew.bat",
+		"!android/local.properties",
+		"!**/__tests__",
+		"!**/__fixtures__",
+		"!**/__mocks__",
+		"!**/.*"
+	],
+	"scripts": {
+		"example": "yarn workspace react-native-c1k-ui-example",
+		"test": "jest",
+		"typecheck": "tsc",
+		"lint": "eslint \"**/*.{js,ts,tsx}\"",
+		"clean": "del-cli lib",
+		"prepare": "bob build",
+		"release": "release-it"
+	},
+	"keywords": [
+		"react-native",
+		"ios",
+		"android"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/christian1koch/react-native-c1k-ui.git"
+	},
+	"author": "Christian Koch Echeverria <ko.che@web.de> (https://github.com/christian1koch)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/christian1koch/react-native-c1k-ui/issues"
+	},
+	"homepage": "https://github.com/christian1koch/react-native-c1k-ui#readme",
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/"
+	},
+	"devDependencies": {
+		"@commitlint/config-conventional": "^17.0.2",
+		"@evilmartians/lefthook": "^1.5.0",
+		"@react-native/eslint-config": "^0.73.1",
+		"@release-it/conventional-changelog": "^5.0.0",
+		"@types/jest": "^29.5.5",
+		"@types/react": "^18.2.44",
+		"commitlint": "^17.0.2",
+		"del-cli": "^5.1.0",
+		"eslint": "^8.57.0",
+		"eslint-config-expo": "^7.1.2",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-import-resolver-typescript": "^3.6.1",
+		"eslint-plugin-import": "^2.29.1",
+		"eslint-plugin-prettier": "^5.0.1",
+		"jest": "^29.7.0",
+		"prettier": "^3.0.3",
+		"react": "18.2.0",
+		"react-native": "0.74.5",
+		"react-native-builder-bob": "^0.30.0",
+		"release-it": "^15.0.0",
+		"tailwindcss": "^3.4.10",
+		"typescript": "^5.2.2"
+	},
+	"resolutions": {
+		"@types/react": "^18.2.44"
+	},
+	"peerDependencies": {
+		"react": "*",
+		"react-native": "*"
+	},
+	"workspaces": [
+		"example"
+	],
+	"packageManager": "yarn@3.6.1",
+	"jest": {
+		"preset": "react-native",
+		"modulePathIgnorePatterns": [
+			"<rootDir>/example/node_modules",
+			"<rootDir>/lib/"
+		]
+	},
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-conventional"
+		]
+	},
+	"release-it": {
+		"git": {
+			"commitMessage": "chore: release ${version}",
+			"tagName": "v${version}"
+		},
+		"npm": {
+			"publish": true
+		},
+		"github": {
+			"release": true
+		},
+		"plugins": {
+			"@release-it/conventional-changelog": {
+				"preset": "angular"
+			}
+		}
+	},
+	"react-native-builder-bob": {
+		"source": "src",
+		"output": "lib",
+		"targets": [
+			[
+				"commonjs",
+				{
+					"esm": true
+				}
+			],
+			[
+				"module",
+				{
+					"esm": true
+				}
+			],
+			[
+				"typescript",
+				{
+					"project": "tsconfig.build.json",
+					"esm": true
+				}
+			]
+		]
+	},
+	"create-react-native-library": {
+		"type": "library",
+		"version": "0.41.0"
+	},
+	"dependencies": {
+		"@tamagui/lucide-icons": "^1.109.2",
+		"classnames": "^2.5.1",
+		"expo": "^51.0.31",
+		"expo-router": "^3.5.23",
+		"expo-status-bar": "^1.12.1",
+		"nativewind": "^2.0.11",
+		"tamagui": "^1.109.2"
+	}
 }
