@@ -6,7 +6,7 @@ interface DividerProps extends ViewProps {
 	horizonal?: boolean;
 }
 
-const Divider: React.FC<DividerProps> = (props) => {
+export const Divider: React.FC<DividerProps> = (props) => {
 	const orientationStyles = {
 		horizontal: "h-1 border-b",
 		vertical: "w-1 border-r",
@@ -24,5 +24,3 @@ const Divider: React.FC<DividerProps> = (props) => {
 		/>
 	);
 };
-
-export default Divider;

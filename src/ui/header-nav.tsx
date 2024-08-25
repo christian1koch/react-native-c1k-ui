@@ -13,7 +13,7 @@ interface HeaderNavProps {
 	menuItems?: MenuItemProps[] | null;
 }
 
-export default function HeaderNav({
+export function HeaderNav({
 	title,
 	href,
 	onChangeText,
