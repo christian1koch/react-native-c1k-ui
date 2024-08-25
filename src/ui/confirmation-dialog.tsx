@@ -1,4 +1,3 @@
-import React from "react";
 import { AlertDialog, Button, YStack, XStack, ButtonProps } from "tamagui"; // Replace with actual imports
 
 // Define the type for the props
