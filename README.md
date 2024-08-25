@@ -1,6 +1,6 @@
 # react-native-c1k-ui
 [![Github License](https://img.shields.io/badge/license-MIT-blue.svg)]((https://github.com/facebook/react/blob/main/LICENSE))
-[![npm version](https://img.shields.io/npm/v/react.svg?style=flat)](https://www.npmjs.com/package/react-native-c1k-ui)
+[![npm version](https://badge.fury.io/js/react-native-c1k-ui.svg)](https://www.npmjs.com/package/react-native-c1k-ui)
 
 ui lib
 
