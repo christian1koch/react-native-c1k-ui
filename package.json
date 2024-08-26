@@ -157,12 +157,12 @@
 		"version": "0.41.0"
 	},
 	"dependencies": {
+		"@tamagui/core": "^1.109.5",
 		"@tamagui/lucide-icons": "^1.109.2",
 		"classnames": "^2.5.1",
 		"expo": "^51.0.31",
 		"expo-router": "^3.5.23",
 		"expo-status-bar": "^1.12.1",
-		"nativewind": "^2.0.11",
-		"tamagui": "^1.109.2"
+		"nativewind": "^2.0.11"
 	}
 }

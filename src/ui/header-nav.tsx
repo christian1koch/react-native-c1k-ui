@@ -1,4 +1,10 @@
-import { Group, H2, Popover, Button as TamaguiButton, Input } from "tamagui";
+import {
+	Group,
+	H2,
+	Popover,
+	Button as TamaguiButton,
+	Input,
+} from "@tamagui/core";
 import { ChevronLeft, MoreHorizontal } from "@tamagui/lucide-icons";
 import { Href, Link } from "expo-router";
 import { useState } from "react";
