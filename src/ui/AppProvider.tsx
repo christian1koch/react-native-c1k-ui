@@ -1,5 +1,5 @@
 import { TamaguiProvider } from "tamagui";
-import tamaguiConfig from "../../tamagui.config";
+import tamaguiConfig from "./AppTheme";
 
 export const AppProvider = ({
 	theme = "dark",
