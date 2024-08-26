@@ -1,11 +1,9 @@
-import {
-	Group,
-	H2,
-	Popover,
-	Button as TamaguiButton,
-	Input,
-} from "@tamagui/core";
+import { Button } from "@tamagui/button";
+import { Group } from "@tamagui/group";
+import { Input } from "@tamagui/input";
 import { ChevronLeft, MoreHorizontal } from "@tamagui/lucide-icons";
+import { Popover } from "@tamagui/popover";
+import { H2 } from "@tamagui/text";
 import { Href, Link } from "expo-router";
 import { useState } from "react";
 import { View } from "react-native";
@@ -38,7 +36,7 @@ export function HeaderNav({
 		<View className="items-center justify-center flex-row my-4">
 			{href && !isEditingTitle && (
 				<Link href={href} asChild>
-					<TamaguiButton
+					<Button
 						className="absolute left-4 rounded-full w-10 h-10"
 						icon={ChevronLeft}
 					/>
@@ -49,7 +47,11 @@ export function HeaderNav({
 					autoFocus
 					onEndEditing={onInputEndEditing}
 					defaultValue={title}
-					onChangeText={onChangeText}
+					onChangeText={(e) =>
+						onChangeText
+							? onChangeText(e.nativeEvent.text)
+							: undefined
+					}
 					enterKeyHint="done"
 				/>
 			) : (
@@ -89,11 +91,11 @@ const OptionsMenu = ({ menuItems }: OptionsMenuProps) => {
 			onOpenChange={setIsOpen}
 		>
 			<Popover.Trigger asChild>
-				<TamaguiButton
+				<Button
 					className="absolute right-4 rounded-full w-10 h-10"
 					icon={MoreHorizontal}
 					onPress={() => setIsOpen(true)}
-				></TamaguiButton>
+				></Button>
 			</Popover.Trigger>
 
 			<Popover.Content
@@ -116,14 +118,14 @@ const OptionsMenu = ({ menuItems }: OptionsMenuProps) => {
 				<Group>
 					{menuItems.map((menuItem) => (
 						<Group.Item key={menuItem.title}>
-							<TamaguiButton
+							<Button
 								onPress={() => {
 									menuItem.onPress();
 									setIsOpen(false);
 								}}
 							>
 								{menuItem.title}
-							</TamaguiButton>
+							</Button>
 						</Group.Item>
 					))}
 				</Group>
