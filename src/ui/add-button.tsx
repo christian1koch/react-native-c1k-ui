@@ -1,6 +1,6 @@
 import { Plus } from "@tamagui/lucide-icons";
 import { View } from "react-native";
-import { Button, ButtonProps } from "@tamagui/button";
+import { Button, ButtonProps } from "tamagui";
 
 interface AddButtonProps extends ButtonProps {
 	onPress: () => void;

@@ -1,12 +1,7 @@
-import { Button } from "@tamagui/button";
-import { Group } from "@tamagui/group";
-import { Input } from "@tamagui/input";
 import { ChevronLeft, MoreHorizontal } from "@tamagui/lucide-icons";
-import { Popover } from "@tamagui/popover";
-import { H2 } from "@tamagui/text";
 import { Href, Link } from "expo-router";
 import { useState } from "react";
-import { View } from "react-native";
+import { Input, H2, Popover, Group, View, Button } from "tamagui";
 
 interface HeaderNavProps {
 	title: string;
@@ -47,11 +42,7 @@ export function HeaderNav({
 					autoFocus
 					onEndEditing={onInputEndEditing}
 					defaultValue={title}
-					onChangeText={(e) =>
-						onChangeText
-							? onChangeText(e.nativeEvent.text)
-							: undefined
-					}
+					onChangeText={onChangeText}
 					enterKeyHint="done"
 				/>
 			) : (

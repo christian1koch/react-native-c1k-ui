@@ -1,4 +1,4 @@
-import { Text, TextProps } from "@tamagui/core";
+import { Text, TextProps } from "tamagui";
 
 interface PaddedTextProps extends TextProps {}
 

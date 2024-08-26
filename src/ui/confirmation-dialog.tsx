@@ -1,6 +1,4 @@
-import { AlertDialog } from "@tamagui/alert-dialog";
-import { YStack, XStack } from "@tamagui/stacks";
-import { ButtonProps, Button } from "@tamagui/button";
+import { AlertDialog, YStack, XStack, ButtonProps, Button } from "tamagui";
 
 // Define the type for the props
 interface AlertDialogDemoProps {
