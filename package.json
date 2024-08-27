@@ -93,7 +93,12 @@
 	},
 	"peerDependencies": {
 		"react": "*",
-		"react-native": "*"
+		"react-native": "*",
+		"@tamagui/babel-plugin": "^1.109.5",
+		"@tamagui/config": "^1.109.5",
+		"@tamagui/lucide-icons": "^1.109.5",
+		"nativewind": "^2.0.11",
+		"tamagui": "^1.109.5"
 	},
 	"workspaces": [
 		"example"
@@ -157,15 +162,10 @@
 		"version": "0.41.0"
 	},
 	"dependencies": {
-		"@tamagui/babel-plugin": "^1.109.5",
-		"@tamagui/config": "^1.109.5",
-		"@tamagui/lucide-icons": "^1.109.5",
 		"classnames": "^2.5.1",
 		"expo": "^51.0.31",
 		"expo-router": "^3.5.23",
-		"expo-status-bar": "^1.12.1",
-		"nativewind": "^2.0.11",
-		"tamagui": "^1.109.5"
+		"expo-status-bar": "^1.12.1"
 	},
 	"eslintIgnore": [
 		"node_modules/",
