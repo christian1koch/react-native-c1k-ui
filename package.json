@@ -157,6 +157,7 @@
 		"version": "0.41.0"
 	},
 	"dependencies": {
+		"@tamagui/babel-plugin": "^1.109.5",
 		"@tamagui/config": "^1.109.5",
 		"@tamagui/lucide-icons": "^1.109.5",
 		"classnames": "^2.5.1",
