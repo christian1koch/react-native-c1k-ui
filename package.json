@@ -35,7 +35,7 @@
 		"!**/__fixtures__",
 		"!**/__mocks__",
 		"!**/.*",
-		"tailwind.config.ts"
+		"tailwind.config.js"
 	],
 	"scripts": {
 		"example": "yarn workspace react-native-c1k-ui-example",
