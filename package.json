@@ -34,9 +34,7 @@
 		"!**/__tests__",
 		"!**/__fixtures__",
 		"!**/__mocks__",
-		"!**/.*",
-		"tailwind.config.js",
-		"global.css"
+		"!**/.*"
 	],
 	"scripts": {
 		"example": "yarn workspace react-native-c1k-ui-example",
@@ -99,7 +97,7 @@
 		"expo": "^51.0.31",
 		"expo-router": "^3.5.23",
 		"expo-status-bar": "^1.12.1",
-		"nativewind": "*",
+		"nativewind": "^2.0.11",
 		"react-native-reanimated": "~3.10.1",
 		"react": "*",
 		"react-native": "*",
