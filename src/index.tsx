@@ -1,4 +1,4 @@
-import tailWindConfig from "../tailwind.config";
+import tailWindConfig from "./ui/tailwind.config";
 export * from "./ui/add-button";
 export * from "./ui/confirmation-dialog";
 export * from "./ui/divider";
