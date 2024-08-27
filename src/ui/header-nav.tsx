@@ -1,7 +1,17 @@
 import { ChevronLeft, MoreHorizontal } from "@tamagui/lucide-icons";
 import { Href, Link } from "expo-router";
 import { useState } from "react";
-import { Input, H2, Popover, Group, View, Button } from "tamagui";
+import {
+	Input,
+	H2,
+	Popover,
+	Group,
+	View as TView,
+	Button as TButton,
+} from "tamagui";
+import { remapProps } from "nativewind";
+const View = remapProps(TView, { className: "style" });
+const Button = remapProps(TButton, { className: "style" });
 
 interface HeaderNavProps {
 	title: string;
